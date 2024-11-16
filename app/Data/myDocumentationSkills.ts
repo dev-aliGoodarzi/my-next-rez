@@ -2,16 +2,16 @@ export const myDocumentationSkills = [
   {
     id: "document 1",
     name: "PostMan ",
-    value: 80,
+    value: 90,
   },
   {
     id: "document 1",
     name: "Swagger ",
-    value: 70,
+    value: 90,
   },
   {
     id: "document 1",
     name: "StoryBook ",
-    value: 5,
+    value: 80,
   },
 ];

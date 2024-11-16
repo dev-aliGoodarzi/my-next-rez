@@ -23,10 +23,17 @@ const CardForSkills: React.FunctionComponent<CardForSkillsProps> = ({
     <div className={`${styles.cardForSkills} my-1`}>
       <div className={`${styles.aboutCurr} `}>
         <div className={`${styles.nameContainer} text-white`}>
-          <span style={{ color: themeColor }}>{name}</span> <span>: </span>
+          <span style={{ color: themeColor }} data-changeable={"true"}>
+            {name}
+          </span>{" "}
+          <span>: </span>
           <span>{value}%</span>
         </div>
-        <p className={`${styles.levelContainer}`} style={{ color: themeColor }}>
+        <p
+          className={`${styles.levelContainer}`}
+          style={{ color: themeColor }}
+          data-changeable={"true"}
+        >
           {between(value, 0, 25) && "Starter"}
           {between(value, 26, 50) && "Intermediate"}
           {between(value, 51, 70) && "Advanced"}

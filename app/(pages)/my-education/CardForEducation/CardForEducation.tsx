@@ -23,16 +23,27 @@ const CardForEducation: React.FunctionComponent<CardForEducationProps> = ({
     >
       <div className={styles.left}>
         <div className={styles.top}>
-          <p className={styles.name} style={{ color: themeColor }}>
+          <p
+            className={styles.name}
+            style={{ color: themeColor }}
+            data-changeable={"true"}
+          >
             <span style={{ color: "#fff" }}>Course Name : </span>
             {name}
           </p>
         </div>
         <p className={styles.teacherName}>
-          Teacher Name : <span style={{ color: themeColor }}>{teacher}</span>
+          Teacher Name :{" "}
+          <span style={{ color: themeColor }} data-changeable={"true"}>
+            {teacher}
+          </span>
         </p>
       </div>
-      <div className={styles.right} style={{ color: themeColor }}>
+      <div
+        className={styles.right}
+        style={{ color: themeColor }}
+        data-changeable={"true"}
+      >
         <Icon />
       </div>
     </div>

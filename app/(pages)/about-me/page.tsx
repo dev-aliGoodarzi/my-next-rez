@@ -26,17 +26,21 @@ const page = () => {
     >
       <p className={styles.title}>ABOUT ME</p>
       <p className={styles.aboutMe}>
-        <span style={{ color: currTheme }}>Hello, I’m Ali</span>, FrontEnd
-        web-developer based on Iran / Malayer. I have rich experience in web
-        Developing & building and customization . Also I am good at{" "}
-        <span style={{ color: currTheme }}>
+        <span style={{ color: currTheme }} data-changeable={true}>
+          Hello, I’m Ali
+        </span>
+        , FrontEnd web-developer based on Iran / Malayer. I have rich experience
+        in web Developing & building and customization . Also I am good at{" "}
+        <span style={{ color: currTheme }} data-changeable={true}>
           html , css , JavaScript , TypeScript , React.Js || React-TypeScript ,
           Next.Js || Next-TypeScript , NodeJs , ExpressJs , MongoDB .
         </span>{" "}
         <br />
         <span>
           Im Trying To be{" ---- "}
-          <span style={{ color: currTheme }}>Fullstack{"<MERN>"}</span>
+          <span style={{ color: currTheme }} data-changeable={true}>
+            Fullstack{"<MERN>"}
+          </span>
           {" ---- "}
           Developer{"  "} {" :) "}
         </span>

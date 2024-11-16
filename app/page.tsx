@@ -17,11 +17,6 @@ import { useRouter } from "next/router";
 import { lang } from "./Constants/constants";
 // Components
 
-export const metadata: Metadata = {
-  title: "Ali Goodarzi Online CV",
-  description: "Im Ali Goodarzi , Im Mid-Level FrontEnd Web Developer",
-};
-
 const page = (ctx: any) => {
   const currLang = ctx?.searchParams?.lang || "en";
   return (

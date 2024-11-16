@@ -43,7 +43,10 @@ const page = () => {
     >
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>My Self</span> Skills
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            My Self
+          </span>{" "}
+          Skills
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {mySelfSkills.map((item) => {
@@ -55,7 +58,10 @@ const page = () => {
       </div>
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>Basic</span> Skills
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            Basic
+          </span>{" "}
+          Skills
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {myBasicSkills.map((item) => {
@@ -67,7 +73,10 @@ const page = () => {
       </div>
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>Programming</span> Skills
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            Programming
+          </span>{" "}
+          Skills
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {myProgrammingLanguageSkills.map((item) => {
@@ -79,7 +88,10 @@ const page = () => {
       </div>
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>Front-End </span> Skills
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            Front-End{" "}
+          </span>{" "}
+          Skills
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {myFrontEndSkills.map((item) => {
@@ -91,7 +103,10 @@ const page = () => {
       </div>
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>Extra-FrontEnd </span> Skills
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            Extra-FrontEnd{" "}
+          </span>{" "}
+          Skills
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {extraFrontEndSkills.map((item) => {
@@ -103,8 +118,14 @@ const page = () => {
       </div>
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>Back-End</span> Skills{" "}
-          <span style={{ color: currTheme }}> {"( Learning )"} </span>
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            Back-End
+          </span>{" "}
+          Skills{" "}
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            {" "}
+            {"( Learning )"}{" "}
+          </span>
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {myBackEndSkills.map((item) => {
@@ -116,8 +137,14 @@ const page = () => {
       </div>
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>Data Base </span> Skills
-          <span style={{ color: currTheme }}> {"( Learning )"} </span>
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            Data Base{" "}
+          </span>{" "}
+          Skills
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            {" "}
+            {"( Learning )"}{" "}
+          </span>
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {myDatabaseSkills.map((item) => {
@@ -129,8 +156,14 @@ const page = () => {
       </div>
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>Mobile Developing</span> Skills
-          <span style={{ color: currTheme }}> {"( Learning )"} </span>
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            Mobile Developing
+          </span>{" "}
+          Skills
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            {" "}
+            {"( Learning )"}{" "}
+          </span>
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {myMobileSkills.map((item) => {
@@ -142,8 +175,14 @@ const page = () => {
       </div>
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>Documenting </span> Skills
-          <span style={{ color: currTheme }}> {"( Learning )"} </span>
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            Documenting{" "}
+          </span>{" "}
+          Skills
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            {" "}
+            {"( Learning )"}{" "}
+          </span>
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {myDocumentationSkills.map((item) => {
@@ -155,8 +194,14 @@ const page = () => {
       </div>
       <div className={`${styles.selfSkills} w-full`}>
         <p className={styles.containerName}>
-          <span style={{ color: currTheme }}>Api Writing </span> Skills
-          <span style={{ color: currTheme }}> {"( Learning )"} </span>
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            Api Writing{" "}
+          </span>{" "}
+          Skills
+          <span style={{ color: currTheme }} data-changeable={"true"}>
+            {" "}
+            {"( Learning )"}{" "}
+          </span>
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
           {myApiWritingSkills.map((item) => {

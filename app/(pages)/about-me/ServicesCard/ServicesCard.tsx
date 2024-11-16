@@ -13,7 +13,11 @@ const ServicesCard: React.FunctionComponent<ServicesCardProps> = ({
 }) => {
   return (
     <div className={styles.serviceCard}>
-      <div className={styles.logoContainer} style={{ color: themeColor }}>
+      <div
+        className={styles.logoContainer}
+        style={{ color: themeColor }}
+        data-changeable={"true"}
+      >
         <ImageData />
       </div>
       <p
@@ -22,6 +26,8 @@ const ServicesCard: React.FunctionComponent<ServicesCardProps> = ({
           fontWeight: "bold ",
         }}
         className="mt-2"
+        data-changeable={true}
+        id={name}
       >
         {name}
       </p>
@@ -30,6 +36,8 @@ const ServicesCard: React.FunctionComponent<ServicesCardProps> = ({
           color: themeColor,
         }}
         className="mt-2"
+        data-changeable={true}
+        id={content}
       >
         {content}
       </p>

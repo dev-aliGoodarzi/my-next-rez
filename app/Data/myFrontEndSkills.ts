@@ -16,24 +16,19 @@ export const myFrontEndSkills = [
     value: 90,
   },
   {
-    id: "frontEnd5",
-    name: "React Hooks",
-    value: 90,
-  },
-  {
     id: "frontEnd8",
     name: "PWA",
-    value: 80,
+    value: 90,
   },
   {
     id: "frontEnd7",
     name: "Tailwind",
-    value: 80,
+    value: 90,
   },
   {
     id: "frontEnd10",
     name: "Redux( TK|Thunk|Saga )",
-    value: 80,
+    value: 90,
   },
   {
     id: "frontEnd8",
@@ -43,6 +38,6 @@ export const myFrontEndSkills = [
   {
     id: "frontEnd9",
     name: "ReactStrap + Bootstrap",
-    value: 65,
+    value: 75,
   },
 ];
