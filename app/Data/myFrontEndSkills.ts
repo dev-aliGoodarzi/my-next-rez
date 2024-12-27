@@ -17,7 +17,7 @@ export const myFrontEndSkills = [
   },
   {
     id: "frontEnd8",
-    name: "PWA",
+    name: "PWA + TWA",
     value: 90,
   },
   {
@@ -27,7 +27,7 @@ export const myFrontEndSkills = [
   },
   {
     id: "frontEnd10",
-    name: "Redux( TK|Thunk|Saga )",
+    name: "Redux ( TK|Thunk|Saga )",
     value: 90,
   },
   {
@@ -38,6 +38,26 @@ export const myFrontEndSkills = [
   {
     id: "frontEnd9",
     name: "ReactStrap + Bootstrap",
-    value: 75,
+    value: 80,
+  },
+  {
+    id: "frontEnd13",
+    name: "React Query",
+    value: 50,
+  },
+  {
+    id: "frontEnd13",
+    name: "MobX",
+    value: 40,
+  },
+  {
+    id: "frontEnd13",
+    name: "Zustand",
+    value: 40,
+  },
+  {
+    id: "frontEnd13",
+    name: "Material UI",
+    value: 25,
   },
 ];

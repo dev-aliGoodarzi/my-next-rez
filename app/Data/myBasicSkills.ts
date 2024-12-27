@@ -12,11 +12,11 @@ export const myBasicSkills = [
   {
     id: "git",
     name: "GIT",
-    value: 60,
+    value: 70,
   },
   {
     id: "docker",
     name: "Docker ( Learning )",
-    value: 10,
+    value: 60,
   },
 ];
