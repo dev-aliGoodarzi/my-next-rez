@@ -43,17 +43,17 @@ export const myFrontEndSkills = [
   {
     id: "frontEnd13",
     name: "React Query",
-    value: 50,
+    value: 70,
   },
   {
     id: "frontEnd13",
     name: "MobX",
-    value: 40,
+    value: 60,
   },
   {
     id: "frontEnd13",
     name: "Zustand",
-    value: 40,
+    value: 60,
   },
   {
     id: "frontEnd13",

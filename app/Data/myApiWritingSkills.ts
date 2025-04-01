@@ -5,13 +5,13 @@ export const myApiWritingSkills = [
     value: 90,
   },
   {
-    id: "backend 5",
-    name: "Graph QL",
-    value: 5,
-  },
-  {
     id: "backend 8",
     name: "Socket Writing",
-    value: 5,
+    value: 60,
+  },
+  {
+    id: "backend 5",
+    name: "Graph QL",
+    value: 20,
   },
 ];
