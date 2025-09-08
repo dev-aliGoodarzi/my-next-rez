@@ -12,10 +12,11 @@ import { Tooltip } from "react-tooltip";
 import ChangeLinksColor from "@/app/Route_ClientComponents/ChangeLinksColor/ChangeLinksColor";
 // Components
 
-type TOCLIENTProps = {
-  children: React.ReactNode;
+type ToCLIENTProps = {
+  children?: React.ReactNode;
 };
-const TOCLIENT: React.FunctionComponent<TOCLIENTProps> = ({ children }) => {
+
+const ToCLIENT: React.FunctionComponent<ToCLIENTProps> = ({ children }) => {
   return (
     <>
       <ChangeLinksColor />
@@ -30,4 +31,4 @@ const TOCLIENT: React.FunctionComponent<TOCLIENTProps> = ({ children }) => {
   );
 };
 
-export default TOCLIENT;
+export default ToCLIENT;

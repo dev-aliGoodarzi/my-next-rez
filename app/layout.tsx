@@ -10,13 +10,12 @@ import "./index.css";
 
 // Components
 import Sidebar from "./Components/Sidebar/Sidebar";
-import TOCLIENT from "./Components/TOCLIENT/TOCLIENT";
+import ToCLIENT from "./Components/TOCLIENT/TOCLIENT";
 // Components
 
 export const metadata: Metadata = {
   title: "Ali Goodarzi Personal Website",
-  description:
-    "Im Ali Goodarzi , Im => Mid-Level FrontEnd Web Developer | Junior Backend Developer | Junior Full-Stack Developer ",
+  description: "Developed By AliGoodarzi",
 };
 
 export default function RootLayout({
@@ -29,9 +28,7 @@ export default function RootLayout({
       <body
         className={`${styles.layoutContainer} w-full flex flex-row items-center justify-between`}
       >
-        <TOCLIENT>
-          <></>
-        </TOCLIENT>
+        <ToCLIENT />
         <Sidebar />
         <div className={`${styles.content}`}>{children}</div>
       </body>

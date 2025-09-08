@@ -12,7 +12,7 @@ export const mySelfSkills = [
   {
     id: "self-3",
     name: "Team Work",
-    value: 85,
+    value: 90,
   },
   {
     id: "self-4",

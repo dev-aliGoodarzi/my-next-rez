@@ -7,6 +7,7 @@ export const myBackEndSkills = [
   {
     id: "backend 2",
     name: "Express.Js",
+    value: 80,
     value: 70,
   },
   {
