@@ -2,7 +2,7 @@ export const extraBackendSkills = [
   {
     id: "exb1",
     name: "Mongoose",
-    value: 60,
+    value: 80,
   },
   {
     id: "exb1",
