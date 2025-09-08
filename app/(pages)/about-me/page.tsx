@@ -29,20 +29,21 @@ const page = () => {
         <span style={{ color: currTheme }} data-changeable={true}>
           Hello, I’m Ali
         </span>
-        , FrontEnd web-developer based on Iran / Malayer. I have rich experience
-        in web Developing & building and customization . Also I am good at{" "}
+        , Full-Stack web-developer based on Iran / Tehran. I have rich
+        experience in web Developing & building and customization . Also I am
+        good at{" "}
         <span style={{ color: currTheme }} data-changeable={true}>
-          html , css , JavaScript , TypeScript , React.Js || React-TypeScript ,
-          Next.Js || Next-TypeScript , NodeJs , ExpressJs , MongoDB .
+          MERN STACK
         </span>{" "}
+        Developing .
         <br />
         <span>
           Im Trying To be{" ---- "}
           <span style={{ color: currTheme }} data-changeable={true}>
-            Fullstack{"<MERN>"}
+            Software Engineer
           </span>
           {" ---- "}
-          Developer{"  "} {" :) "}
+          {"  "} {" :) "}
         </span>
       </p>
 

@@ -2,10 +2,9 @@ export const en = {
   name: "Ali Goodarzi",
   skills: [
     "Mid Level FrontEnd Web Developer .",
-    "Junior BackEnd Developer .",
+    "Mid Level BackEnd Developer .",
     "Working Form Home ( Remote )  .",
-    "Junior Full-Stack Web Developer .",
-    "Learning right now Node.Js & Express.Js .",
-    "Trying To be MERN Stack Web Developer .",
+    "Mid Level Full-Stack Web Developer .",
+    "Trying To be Software Engineer .",
   ],
 };

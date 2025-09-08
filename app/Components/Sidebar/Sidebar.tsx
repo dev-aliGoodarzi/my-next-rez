@@ -59,14 +59,14 @@ const Sidebar = () => {
       >
         <MdCastForEducation />
       </Link>
-      <Link
+      {/* <Link
         href={"/my-projects"}
         data-tooltip-id="my-tooltip"
         data-tooltip-content="My Projects"
         data-href={"/my-projects"}
       >
         <AiOutlineFundProjectionScreen />
-      </Link>
+      </Link> */}
     </aside>
   );
 };

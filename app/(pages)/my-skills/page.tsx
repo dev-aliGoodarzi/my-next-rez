@@ -125,7 +125,7 @@ const page = () => {
           Skills{" "}
           <span style={{ color: currTheme }} data-changeable={"true"}>
             {" "}
-            {"( Learning )"}{" "}
+            {/* {"( Learning )"}{" "} */}
           </span>
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
@@ -197,7 +197,7 @@ const page = () => {
           Skills
           <span style={{ color: currTheme }} data-changeable={"true"}>
             {" "}
-            {"( Learning )"}{" "}
+            {/* {"( Learning )"}{" "} */}
           </span>
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
@@ -216,7 +216,7 @@ const page = () => {
           Skills
           <span style={{ color: currTheme }} data-changeable={"true"}>
             {" "}
-            {"( Learning )"}{" "}
+            {/* {"( Learning )"}{" "} */}
           </span>
         </p>
         <div className={`${styles.skillsProgressContainer} w-full `}>
