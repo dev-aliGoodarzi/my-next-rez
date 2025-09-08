@@ -26,7 +26,8 @@ export const myServices: {
     id: "service-2",
     name: "Backend Web Development",
     ImageData: FaNodeJs,
-    content: "Currently I'm Learning Node.js & Express.Js .",
+    content:
+      "Developing Large-Scale Backend With Javascript Ecosystem Such As : Node.js & Express.Js .",
   },
   {
     id: "service-3",
