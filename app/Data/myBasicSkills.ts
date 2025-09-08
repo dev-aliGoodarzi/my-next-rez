@@ -16,7 +16,7 @@ export const myBasicSkills = [
   },
   {
     id: "docker",
-    name: "Docker ( Learning )",
-    value: 10,
+    name: "Docker",
+    value: 60,
   },
 ];

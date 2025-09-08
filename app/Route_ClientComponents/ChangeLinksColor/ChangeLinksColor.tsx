@@ -38,6 +38,7 @@ const ChangeLinksColor = () => {
   }, [themeColor, currPath]);
 
   const changeBackgroundColorOfThemeEffectElements = useCallback(() => {
+    console.log(themeColor);
     const allEments = document.querySelectorAll("*");
     if (allEments.length === 0) return;
     for (let i = 0; i <= allEments.length - 1; i++) {

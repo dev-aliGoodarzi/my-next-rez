@@ -9,7 +9,6 @@ export const myFrontEndSkills = [
     name: "SASS & SCSS",
     value: 90,
   },
-
   {
     id: "frontEnd4",
     name: "React.Js ( .tsx )",
