@@ -10,6 +10,11 @@ export const myBackEndSkills = [
     value: 80,
   },
   {
+    id: "backend 9",
+    name: "Nest.Js",
+    value: 80,
+  },
+  {
     id: "backend 10",
     name: "Koa.Js",
     value: 5,

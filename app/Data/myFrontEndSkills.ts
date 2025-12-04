@@ -32,17 +32,17 @@ export const myFrontEndSkills = [
   {
     id: "frontEnd8",
     name: "Next.Js ( .tsx )",
-    value: 80,
+    value: 90,
   },
   {
     id: "frontEnd9",
     name: "ReactStrap + Bootstrap",
-    value: 80,
+    value: 90,
   },
   {
     id: "frontEnd13",
     name: "React Query",
-    value: 70,
+    value: 90,
   },
   {
     id: "frontEnd13",
@@ -55,7 +55,12 @@ export const myFrontEndSkills = [
     value: 60,
   },
   {
-    id: "frontEnd13",
+    id: "frontEnd123",
+    name: "Daisy-UI",
+    value: 25,
+  },
+  {
+    id: "frontEnd100",
     name: "Material UI",
     value: 25,
   },
