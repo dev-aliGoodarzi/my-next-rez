@@ -13,7 +13,6 @@ import styles from "./home.module.css";
 
 // Components
 import TypeEffect from "./Route_ClientComponents/Home/TypeEffect/TypeEffect";
-import { useRouter } from "next/router";
 import { lang } from "./Constants/constants";
 // Components
 

@@ -11,7 +11,7 @@ import Link from "next/link";
 // Components
 
 // Icons
-import { AiOutlineFundProjectionScreen, AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 import { MdCastForEducation } from "react-icons/md";

@@ -1,1 +1,1 @@
-{"version":3,"sources":["MyEducation.module.scss","MyEducation.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;EACA,qBAAA;EACA,aAAA;EAEA,4DAAA;EACA,0BAAA;EAEA,SAAA;ACDF;;ADIA;EACE;IACE,UAAA;ECDF;EDGA;IACE,YAAA;ECDF;AACF","file":"MyEducation.module.css"}
+{"version":3,"sourceRoot":"","sources":["MyEducation.module.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;EAEA;EACA;EAEA;;;AAGF;EACE;IACE;;EAEF;IACE","file":"MyEducation.module.css"}

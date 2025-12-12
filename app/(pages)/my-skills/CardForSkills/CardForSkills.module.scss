@@ -1,89 +1,172 @@
 .cardForSkills {
+  position: relative;
   width: 100%;
-  height: 10vh;
+  padding: 1.2rem 1.4rem;
+  border-radius: 18px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0px 16px;
-  .aboutCurr {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    font : {
+  gap: 0.9rem;
+
+  transition: all 0.35s ease;
+
+  overflow: hidden;
+  isolation: isolate;
+
+  /* Glow layer */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.25),
+      transparent
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+
+  /* Shine layer */
+  &::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      60deg,
+      transparent,
+      rgba(255, 255, 255, 0.08),
+      transparent
+    );
+    transform: translateX(-100%);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+    &::before {
+      opacity: 1;
     }
-    .nameContainer,
-    .levelContainer {
-      font : {
-        size: 1rem;
-      }
+
+    &::after {
+      transform: translateX(100%);
+    }
+  }
+
+  /* Header */
+  .aboutCurr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nameContainer {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+
       span {
         color: #fff;
-        font : {
-        }
       }
     }
+
+    .levelContainer {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+
+      background: rgba(255, 255, 255, 0.12);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      white-space: nowrap;
+    }
   }
+
+  /* Progress wrapper */
   .likeProgress {
+    position: relative;
     width: 100%;
     height: 10px;
-    display: block;
-    border-radius: 2rem;
+    border-radius: 999px;
+    overflow: hidden;
+
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.15),
+      rgba(255, 255, 255, 0.05)
+    );
+
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+
+    /* Moving glow */
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+      );
+      animation: glow-slide 3.5s infinite;
+    }
+
     .inner {
       height: 100%;
+      border-radius: inherit;
+
       background: linear-gradient(
         90deg,
-        #ffd33dc7,
-        #ea4aaac7 17%,
-        #b34bffc7 34%,
-        #01feffc7 51%,
-        #ffd33dc7 68%
+        #ffd33d,
+        #ea4aaa,
+        #b34bff,
+        #01feff,
+        #ffd33d
       );
+
       background-size: 300% 100%;
-      animation: progress-animation 2.5s ease-in-out infinite alternate forwards;
-      -webkit-animation: progress-animation 2.5s ease-in-out infinite;
+      animation: progress-animation 3s linear infinite;
+
+      transition: width 1.2s cubic-bezier(0.25, 1, 0.3, 1);
     }
   }
 }
+
+/* Animations */
 @keyframes progress-animation {
   from {
-    background-position: 0;
-    border-radius: 2rem;
+    background-position: 0%;
   }
   to {
     background-position: -300%;
-    border-radius: 2rem;
   }
 }
-@-moz-keyframes progress-animation {
-  from {
-    background-position: 0;
-    border-radius: 2rem;
+
+@keyframes glow-slide {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
-    background-position: -300%;
-    border-radius: 2rem;
-  }
-}
-@-webkit-keyframes progress-animation {
-  from {
-    background-position: 0;
-    border-radius: 2rem;
-  }
-  to {
-    background-position: -300%;
-    border-radius: 2rem;
-  }
-}
-@-o-keyframes progress-animation {
-  from {
-    background-position: 0;
-    border-radius: 2rem;
-  }
-  to {
-    background-position: -300%;
-    border-radius: 2rem;
+  100% {
+    transform: translateX(100%);
   }
 }

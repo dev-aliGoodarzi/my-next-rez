@@ -1,53 +1,103 @@
 .mySkillsContainer {
+  min-height: 100vh;
   overflow-y: auto;
-  animation: fade-in 1s;
+  padding-bottom: 4rem;
 
-  background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
+  background: linear-gradient(135deg, #1d1e21 0%, #2b2f33 100%);
+  animation: fade-in 0.8s ease-out;
+
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+  }
 
   .selfSkills {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-    margin-top: 5rem;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(6px);
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:first-of-type {
+      margin-top: 1.5rem;
+    }
+
     .containerName {
-      font: {
-        size: 2rem;
-      }
+      font-size: 2rem;
+      font-weight: 700;
       color: #fff;
+      margin-bottom: 1.5rem;
+      position: relative;
+
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+
+      &::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        margin-left: 1rem;
+      }
 
       span:nth-child(2) {
-        font : {
-          size: 14px !important;
-        }
-        margin-left: 12px;
+        font-size: 0.85rem;
+        opacity: 0.7;
       }
-    }
-    &:first-of-type {
-      margin-top: 1.25rem !important;
     }
 
     .skillsProgressContainer {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
     }
   }
 }
 
+/* Animations */
 @keyframes fade-in {
   from {
     opacity: 0;
+    transform: translateY(12px);
   }
   to {
-    opacity: 100;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media screen and (max-width: 1200px) {
+/* Responsive */
+@media (max-width: 1200px) {
   .skillsProgressContainer {
-    grid-template-columns: 1fr 1fr !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .skillsProgressContainer {
     grid-template-columns: 1fr !important;
+  }
+
+  .selfSkills {
+    padding: 1.5rem;
   }
 }
