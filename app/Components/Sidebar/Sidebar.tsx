@@ -22,7 +22,8 @@ const Sidebar = () => {
     <aside className={`${styles.sidebarContainer} flex flex-col items-center `}>
       <p
         data-theme-effect={"true"}
-        className="w-full flex items-center justify-center"
+        data-changeable={"true"}
+        className="w-full flex items-center justify-center text-xl !text-white"
       >
         A
       </p>
