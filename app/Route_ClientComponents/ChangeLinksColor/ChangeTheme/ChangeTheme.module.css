@@ -1,17 +1,81 @@
+@charset "UTF-8";
 .themeContainer {
-  width: 200px;
+  width: 220px;
+  padding: 1.25rem 1.25rem 1.5rem;
+  border-radius: 1.25rem;
+  position: fixed;
+  top: 2.5rem;
+  right: 1rem;
+  z-index: 50;
+  /* Neumorphism base */
+  background: #1e2126;
+  box-shadow: 10px 10px 22px rgba(0, 0, 0, 0.65), -10px -10px 22px rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: slideFade 0.35s ease;
 }
-.themeContainer .themesColorsContainer {
+
+.title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+}
+
+/* ───────── COLOR GRID ───────── */
+.themesColorsContainer {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 8px;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 16px;
-  margin-top: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 0.5rem;
 }
-.themeContainer .themesColorsContainer span {
-  width: 16px;
-  height: 16px;
+
+/* ───────── COLOR DOT ───────── */
+.colorDot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s ease;
+  /* Neumorphic raised dot */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6), -4px -4px 8px rgba(255, 255, 255, 0.15);
+  /* Glow ring on hover */
+}
+.colorDot:hover {
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.75), -6px -6px 12px rgba(255, 255, 255, 0.25);
+}
+.colorDot:active {
+  transform: scale(0.95);
+  /* Pressed neumorphism */
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.7), inset -3px -3px 6px rgba(255, 255, 255, 0.25);
+}
+.colorDot::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: radial-gradient(circle, currentColor 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.colorDot:hover::after {
+  opacity: 0.6;
+}
+
+/* ───────── ANIMATION ───────── */
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateX(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
 }/*# sourceMappingURL=ChangeTheme.module.css.map */

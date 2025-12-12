@@ -1,19 +1,30 @@
+@charset "UTF-8";
 .cardContainer {
   width: 100%;
   margin-top: 2vh;
+  padding: 1rem 1.25rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  border-radius: 0.5rem;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid transparent;
-  transition: 0.1s ease all;
+  border-radius: 0.75rem;
+  /* Must match page background */
+  background: #1e2126;
+  transition: all 0.25s ease;
+  position: relative;
+  /* Raised neumorphic surface */
+  box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.65), -8px -8px 18px rgba(255, 255, 255, 0.04);
+  /* ───────── LEFT SIDE ───────── */
+  /* ───────── RIGHT SIDE ───────── */
 }
 .cardContainer:hover {
-  border: 2px solid rgb(238, 97, 146);
+  transform: translateY(-1px);
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.75), -12px -12px 24px rgba(255, 255, 255, 0.06);
+}
+.cardContainer:active {
+  /* Pressed effect */
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.7), inset -5px -5px 10px rgba(255, 255, 255, 0.05);
 }
 .cardContainer .left {
   height: 100%;
@@ -24,23 +35,27 @@
 }
 .cardContainer .left .top .name,
 .cardContainer .left .top span {
-  font-family: popins-regular;
-  font-weight: bold;
-  transition: 0.1s ease all;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  transition: color 0.2s ease;
 }
 .cardContainer .left .teacherName {
-  transition: 0.1s ease all;
   margin-top: 1rem;
-  font-weight: bold;
-  color: #fff;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.2s ease;
 }
 .cardContainer .left .teacherName span {
   font-weight: 400;
-  transition: 0.1s ease all;
+  color: rgba(255, 255, 255, 0.7);
 }
 .cardContainer .right {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
 }
 .cardContainer .right svg {
   font-size: 2rem;
+  color: var(--theme-color);
+  /* Neumorphic icon depth */
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.6));
 }/*# sourceMappingURL=CardForEducation.module.css.map */

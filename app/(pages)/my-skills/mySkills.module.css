@@ -79,4 +79,28 @@
   .selfSkills {
     padding: 1.5rem;
   }
+}
+@media (max-width: 800px) {
+  .mySkillsContainer .selfSkills .containerName {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    margin-bottom: 1.25rem;
+  }
+  .mySkillsContainer .selfSkills .containerName::after {
+    width: 42px;
+    height: 3px;
+    flex: none;
+    margin-left: 0;
+    margin-top: 0.4rem;
+    border-radius: 2px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.6), transparent);
+  }
+  .mySkillsContainer .selfSkills .containerName span:nth-child(2) {
+    font-size: 0.75rem;
+    opacity: 0.6;
+  }
 }/*# sourceMappingURL=mySkills.module.css.map */

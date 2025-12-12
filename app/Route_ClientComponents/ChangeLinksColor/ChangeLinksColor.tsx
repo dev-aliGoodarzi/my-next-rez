@@ -15,9 +15,6 @@ import ChangeTheme from "./ChangeTheme/ChangeTheme";
 const ChangeLinksColor = () => {
   const [themeColor, setThemeColor] = useState<string>("rgb(238, 97, 146)");
 
-  const [isThemeSelectorInScreen, setIsThemeSelectorInScreen] =
-    useState<boolean>(true);
-
   const currPath = usePathname();
 
   const colorOfSvgChanger = useCallback(() => {
@@ -65,12 +62,7 @@ const ChangeLinksColor = () => {
       }
       `}
       </style>
-      {isThemeSelectorInScreen ? (
-        <ChangeTheme
-          setTheme={setThemeColor}
-          setIsThemeSelectorInScreen={setIsThemeSelectorInScreen}
-        />
-      ) : null}
+      <ChangeTheme setTheme={setThemeColor} />
     </>
   );
 };

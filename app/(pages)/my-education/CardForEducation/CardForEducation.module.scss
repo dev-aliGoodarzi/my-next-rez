@@ -1,19 +1,41 @@
 .cardContainer {
   width: 100%;
   margin-top: 2vh;
+  padding: 1rem 1.25rem;
+
   display: flex;
+
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  border-radius: 0.5rem;
-  padding: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid transparent;
-  transition: 0.1s ease all;
+
+  border-radius: 0.75rem;
+
+  /* Must match page background */
+  background: #1e2126;
+
+  transition: all 0.25s ease;
+  position: relative;
+
+  /* Raised neumorphic surface */
+  box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.65),
+    -8px -8px 18px rgba(255, 255, 255, 0.04);
+
   &:hover {
-    border: 2px solid rgb(238, 97, 146);
+    transform: translateY(-1px);
+
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.75),
+      -12px -12px 24px rgba(255, 255, 255, 0.06);
   }
+
+  &:active {
+    /* Pressed effect */
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.7),
+      inset -5px -5px 10px rgba(255, 255, 255, 0.05);
+  }
+
+  /* ───────── LEFT SIDE ───────── */
   .left {
     height: 100%;
     display: flex;
@@ -24,36 +46,36 @@
     .top {
       .name,
       span {
-        font : {
-          family: popins-regular;
-          weight: bold;
-        }
-        transition: 0.1s ease all;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        color: #fff;
+        transition: color 0.2s ease;
       }
     }
+
     .teacherName {
-      transition: 0.1s ease all;
       margin-top: 1rem;
-      font : {
-        weight: bold;
-      }
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.9);
+      transition: color 0.2s ease;
+
       span {
-        font : {
-          weight: 400;
-        }
-        transition: 0.1s ease all;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.7);
       }
-      color: #fff;
     }
   }
+
+  /* ───────── RIGHT SIDE ───────── */
   .right {
-    padding: {
-      right: 2rem;
-    }
+    padding-right: 1.5rem;
+
     svg {
-      font : {
-        size: 2rem;
-      }
+      font-size: 2rem;
+      color: var(--theme-color);
+
+      /* Neumorphic icon depth */
+      filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.6));
     }
   }
 }

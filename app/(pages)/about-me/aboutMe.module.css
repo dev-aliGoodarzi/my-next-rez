@@ -1,7 +1,9 @@
 .aboutMeContainer {
   animation: fade-in 1s;
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+  overflow-y: auto;
   background: linear-gradient(135deg, #1d1e21 0, #3e4246 100%);
-  overflow: auto;
 }
 .aboutMeContainer .title {
   font-size: 3rem;

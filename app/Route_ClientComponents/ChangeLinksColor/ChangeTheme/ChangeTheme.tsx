@@ -9,64 +9,78 @@ import styles from "./ChangeTheme.module.css";
 
 type ChangeThemeProps = {
   setTheme: React.Dispatch<React.SetStateAction<string>>;
-  setIsThemeSelectorInScreen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 const ChangeTheme: React.FunctionComponent<ChangeThemeProps> = ({
-  setIsThemeSelectorInScreen,
   setTheme,
 }) => {
   const themes = [
     {
       id: "c-1",
-      colorCode: "rgb(90, 194, 78)",
+      name: "Emerald",
+      colorCode: "linear-gradient(135deg, #2ecc71, #1abc9c)",
+      solid: "#2ecc71",
     },
     {
       id: "c-2",
-      colorCode: "rgb(101, 180, 243)",
+      name: "Sky",
+      colorCode: "linear-gradient(135deg, #3498db, #5dade2)",
+      solid: "#3498db",
     },
     {
       id: "c-3",
-      colorCode: "rgb(245, 166, 64)",
+      name: "Amber",
+      colorCode: "linear-gradient(135deg, #f39c12, #f1c40f)",
+      solid: "#f39c12",
     },
     {
       id: "c-4",
-      colorCode: "rgb(238, 97, 146)",
+      name: "Rose",
+      colorCode: "linear-gradient(135deg, #e84393, #fd79a8)",
+      solid: "#e84393",
     },
     {
       id: "c-5",
-      colorCode: "rgb(187, 104, 200)",
+      name: "Violet",
+      colorCode: "linear-gradient(135deg, #9b59b6, #be90d4)",
+      solid: "#9b59b6",
     },
     {
       id: "c-6",
-      colorCode: "rgb(238, 83, 79)",
+      name: "Coral",
+      colorCode: "linear-gradient(135deg, #e74c3c, #ff7675)",
+      solid: "#e74c3c",
     },
     {
       id: "c-7",
-      colorCode: "rgb(0, 100, 20)",
+      name: "Forest",
+      colorCode: "linear-gradient(135deg, #16a085, #27ae60)",
+      solid: "#16a085",
     },
     {
       id: "c-8",
-      colorCode: "rgb(125, 125, 125)",
+      name: "Slate",
+      colorCode: "linear-gradient(135deg, #7f8c8d, #95a5a6)",
+      solid: "#7f8c8d",
     },
   ];
   return (
-    <div
-      className={`${styles.themeContainer} flex flex-col items-center fixed right-0 top-10 bg-slate-200 p-4 rounded-lg z-50`}
-    >
-      <p>select one of thease</p>
-      <div className={`${styles.themesColorsContainer} `}>
+    <div className={styles.themeContainer}>
+      <p className={styles.title}>Select Theme</p>
+
+      <div className={styles.themesColorsContainer}>
         {themes.map((item) => (
           <span
             key={item.id}
+            className={styles.colorDot}
             style={{
               background: item.colorCode,
+              color: item.solid, // for glow ring
             }}
-            className="rounded-full"
             onClick={() => {
-              setTheme(item.colorCode);
+              setTheme(item.solid); // keep theme logic clean
             }}
-          ></span>
+          />
         ))}
       </div>
     </div>
