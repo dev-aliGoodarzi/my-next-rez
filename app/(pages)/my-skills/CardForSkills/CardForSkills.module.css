@@ -1,53 +1,22 @@
+@charset "UTF-8";
 .cardForSkills {
-  position: relative;
   width: 100%;
-  padding: 1.2rem 1.4rem;
-  border-radius: 18px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.25rem 1.5rem;
+  border-radius: 20px;
+  background: #1e2126;
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
-  transition: all 0.35s ease;
-  overflow: hidden;
-  isolation: isolate;
-  /* Glow layer */
-  /* Shine layer */
-  /* Header */
-  /* Progress wrapper */
-}
-.cardForSkills::before {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.25), transparent);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: -1;
-}
-.cardForSkills::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(60deg, transparent, rgba(255, 255, 255, 0.08), transparent);
-  transform: translateX(-100%);
-  transition: transform 0.7s ease;
-  pointer-events: none;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  /* Neumorphic shadows */
+  box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6), -8px -8px 18px rgba(255, 255, 255, 0.04);
+  /* ───────── HEADER ───────── */
+  /* ───────── PROGRESS BAR ───────── */
 }
 .cardForSkills:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
-}
-.cardForSkills:hover::before {
-  opacity: 1;
-}
-.cardForSkills:hover::after {
-  transform: translateX(100%);
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.7), -12px -12px 24px rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
 }
 .cardForSkills .aboutCurr {
   display: flex;
@@ -56,38 +25,30 @@
 }
 .cardForSkills .aboutCurr .nameContainer {
   font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
+  font-weight: 600;
+  color: #fff;
 }
 .cardForSkills .aboutCurr .nameContainer span {
-  color: #fff;
+  color: inherit;
 }
 .cardForSkills .aboutCurr .levelContainer {
   font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.25rem 0.6rem;
+  padding: 0.3rem 0.7rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
+  background: #1e2126;
+  color: #aaa;
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.6), inset -3px -3px 6px rgba(255, 255, 255, 0.05);
   text-transform: uppercase;
-  letter-spacing: 0.6px;
-  white-space: nowrap;
+  letter-spacing: 0.5px;
 }
 .cardForSkills .likeProgress {
-  position: relative;
   width: 100%;
   height: 10px;
   border-radius: 999px;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
-  /* Moving glow */
-}
-.cardForSkills .likeProgress::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.25), transparent);
-  animation: glow-slide 3.5s infinite;
+  background: #1e2126;
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.7), inset -4px -4px 6px rgba(255, 255, 255, 0.05);
 }
 .cardForSkills .likeProgress .inner {
   height: 100%;
@@ -95,23 +56,15 @@
   background: linear-gradient(90deg, #ffd33d, #ea4aaa, #b34bff, #01feff, #ffd33d);
   background-size: 300% 100%;
   animation: progress-animation 3s linear infinite;
-  transition: width 1.2s cubic-bezier(0.25, 1, 0.3, 1);
+  transition: width 1.2s ease-out;
 }
 
-/* Animations */
+/* ───────── ANIMATION ───────── */
 @keyframes progress-animation {
   from {
     background-position: 0%;
   }
   to {
     background-position: -300%;
-  }
-}
-@keyframes glow-slide {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
   }
 }/*# sourceMappingURL=CardForSkills.module.css.map */
